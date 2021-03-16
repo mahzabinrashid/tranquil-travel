@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.home {
+    display: flex;
+    background: url("images/banner.png") no-repeat center;
+    height: 80vh;
+    color: white;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .max-width {
+    margin: auto 0 auto 30px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 947px) {
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+    .home .home-content a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
+
+.intro {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    min-height: 30vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+.heading,
+form {
+    min-height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border-color: #274574;
+}
+
+.form {
+    padding: 50px;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.weather {
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather h1 {
+    font-size: 1.5rem;
+}
+
+.weather input {
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.weather button {
+    background: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.content {
+    background: white;
+}
+
+.output {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px #274574;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #F4F4F4;
+}
+
+.output p {
+    padding: 5px;
+}
+
+.weather button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    background-color: #272727;
+    color: white;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.weather button:hover {
+    font-size: 1.2rem;
+}
+
+.my-todo {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    min-height: 60vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form button {
+    color: black;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: black;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: rgb(73, 204, 73);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
